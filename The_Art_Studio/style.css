@@ -1,0 +1,662 @@
+
+
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+
+                                          /*ACTUAL STYLING CODE*/
+
+
+/* *
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+} */
+body{
+	background-color: whitesmoke;
+	color:black;
+	font-family: arial , helvetica , sans-serif;
+    font-size: 10px;
+    line-height: 2em;
+    /* width:100%; */
+    /* min-width: 700px; */
+} 
+#main-header{
+    background-color: black;
+    color: whitesmoke; 
+    /* width: min-content; */
+    /* width: auto; */
+    /* min-height: 300px;  */
+}
+#main-header h1{
+	/* font-size: 60px; */
+    font-size: 550%;
+    font-family: Times, Times New Roman, serif;
+    padding-top: 5% ;
+    text-align: center;
+}
+#main-header h2{
+	font-size: 200%;
+    font-family: cursive;    
+    padding-top: 3% ;
+    text-align: center;
+    padding-bottom: 4%;
+}
+#navbar{
+    /* width: 100%; */
+    /* overflow: hidden; */
+    /* margin: auto;    */
+    text-align: center;
+
+    /* justify-content:center; */
+}
+#name-icon{
+    /* font-size: 16px; */
+    font-size: 90%;
+    vertical-align: middle;
+}
+
+#navbar ul{
+    display:inline-flex;
+    /* align-items: stretch; */
+	font-size: 18px;
+    line-height: 10px;
+    vertical-align: middle;
+    font-family: monospace;  
+}
+#navbar li{
+    /* margin: 5px; */
+    padding: 10px;
+}
+#navbar a{
+    color: ghostwhite;
+    text-decoration: none;
+    white-space: nowrap; 
+}
+#navbar li:hover {
+    background: darkgrey;
+    border-radius: 5px;
+ }  
+.sub-menu{
+    display: none;
+}
+#navbar ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background: lightgrey ;
+    margin-top: 10px;
+    margin-left: -10px;
+    z-index: 1;
+ }
+#navbar ul li:hover .sub-menu ul{
+    display: block;
+    margin: 5px
+}
+#navbar ul li:hover .sub-menu ul li{
+    /* width: 150px; 
+    padding:10px; */
+    border-bottom:1px dotted whitesmoke;
+    background: lightgrey;
+    border-radius:0; 
+    text-align: left;
+}
+#navbar ul li:hover .sub-menu ul li:last-child{
+    border-bottom: none;
+}
+#navbar ul li:hover .sub-menu ul li a:hover{
+    color: black;
+}
+.pictures{
+   /* float: left; */
+    display:inline-flex;
+    /* justify-content: space-between; */
+    /* width: 25%; */
+    padding: 1%;
+    /* box-sizing:  border-box ; */
+}
+#poster{
+    float: right;
+    /* width: 25%; */
+    padding: 8px;
+    margin-top: 1%;
+    /* margin-right:28% */
+    box-sizing:  border-box ;
+    position: relative;
+    background: red;
+}
+#poster h1{
+   position: absolute;
+   /* top: 20px; */
+   top: 3%;
+   font: normal 44px Book Antiqua ;
+   font-weight: bold;
+   color: white;
+}
+#poster h2{
+   position: absolute;
+   /* top: 62px; */
+   top: 11%;
+   /* left: 10px; */
+   left: 3%;
+   font: normal 10px Lucida Console;
+   color: antiquewhite;
+}
+#poster h3{
+   position: absolute;
+   /* top: 250px; */
+   top: 45%;
+   /* left: 80px; */
+   left: 24%;
+   /* padding: 20px; */
+   padding: 6%;
+   font: normal 25px  Verdana ;
+   text-align: right;
+   color: floralwhite;
+   font-weight: bold;
+}
+#poster h4{
+   position: absolute;
+   /* top: 320px;
+   left: 150px;
+   padding: 20px; */
+   top: 56%;
+   left: 45%;
+   padding: 6%;
+   text-align: right;
+   font: normal 20px Helvetica;
+   color: indianred; 
+}
+#poster h5{
+   position: absolute;
+   /* top: 425px;
+   right: 200px;
+   padding: 10px; */
+   top: 80%;
+   right: 45%;
+   padding: 3%;
+   text-align: left;
+   font: bold 15px Century Gothic;
+   color:darkblue;
+}
+#poster h6{
+   position: absolute;
+   /* top: 477px;
+   right: 200px;
+   padding: 10px; */
+   top: 87%;
+   right: 47%;
+   padding: 3%;
+   text-align: left;
+   font: bold 12px Courier;
+   color:black;
+}
+#subscribe_bar{
+    float: left;
+    width: 71%;/* change this while using medie query */
+    /* flex-basis: 50%; */
+    height: 100%;
+    margin: 10px;
+    position: relative; 
+    background-color: #EEE8AA; 
+}
+#subscribe_bar h1{
+     color: #800000  ; 
+     /* padding-top: 20%;
+     padding-left: 7%;
+     padding-bottom: 2%; */
+     padding: 1.5% 7%;
+     font-size: 15px;
+     font-family: pitch,courier new,Courier,lucida sans typewriter,lucida typewriter,monospace !important;
+}
+.button{
+     font-family: pitch,courier new,Courier,lucida sans typewriter,lucida typewriter,monospace !important;
+    background-color: indianred;
+    color: navajowhite;
+    padding: 10px 10px;
+    border: none;
+}
+.button:hover{
+    background:maroon;
+    color:white;
+}
+.form-group{
+    padding: 20px;
+    position: absolute;
+    top: -12px;
+    left: 490px;
+    
+}
+.form-group input{
+    padding: 6px;
+}
+#social_media ul{
+    position: fixed;
+    z-index: 1;
+    left: 0px;
+    top: 50px;
+    list-style: none;
+    border-radius: 100px;
+    background: #f1e1cc;
+    padding: 15px;
+}
+#articles{
+    background-color: #DCDCDC;
+    margin-top: 400px;
+    margin-left: 10px; 
+    box-sizing: border-box;
+    width: 72.2%;
+    min-height:1500px ;
+}
+#articles h2{
+    color: black;
+    font-family: Bahnschrift SemiBold;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px;
+}
+.showcase1, .showcase2, .showcase3, .showcase4{
+    float: left;
+    width: 410px;
+    height: 650px;
+    border: 1px solid lightgrey;
+    border-left:20px ;
+    margin:15px 20px;
+    position: relative; 
+    background-color: white;  
+}
+.showcase1:hover, .showcase2:hover, .showcase3:hover, .showcase4:hover{
+    background-color: #F3f2ed;
+}
+.showcase1 h1, .showcase2 h1, .showcase3 h1, .showcase4 h1{
+    font-size: 15px;
+    color: #A9A9A9;
+    text-align: center;
+    border-bottom:1px dotted lightgrey;
+    padding: 10px;
+    font-family: pitch,courier new,Courier,lucida sans typewriter,lucida typewriter,monospace !important;
+}
+.showcase1 p,.showcase2 p,.showcase3 p,.showcase4 p{
+    font-style: arial;
+    font-size: 15px;
+    padding: 10px;
+    color: black;
+ }
+.showcase1 h2 a,.showcase2 h2 a,.showcase3 h2 a,.showcase4 h2 a{
+   text-decoration: none;
+    font-size: 13px;
+    padding-left: 140px;
+    font-weight: bold;
+    font-style: arial;
+    position: absolute;
+    bottom: 10px;
+    display: inline-flex;
+}
+.showcase1 h2 a img,.showcase2 h2 a img,.showcase3 h2 a img,.showcase4 h2 a img{
+    max-width: 14px;
+    max-height: 14px;
+}
+.showcase1 h2 a:hover,.showcase2 h2 a:hover,.showcase3 h2 a:hover,.showcase4 h2 a:hover{
+   color: blue;
+}
+.checked {
+  color: orange;
+  text-decoration: none;
+}
+#side_posters ul{
+    position: absolute;
+    top: 870px;
+    margin-left: 950px;  
+    list-style: none;
+}
+#side_posters ul li {
+    margin-bottom: 60px; 
+}
+#side_posters ul li a{
+    text-align: center;
+    text-decoration: none;       
+}
+#side_posters ul li a h1{
+    font:bold 20px Estrangelo Edessa;
+    background-color: #9e1b32;
+    color: white;
+    padding: 10px;
+}
+#shop{
+    background-color:#DCDCDC;
+    margin-left: 10px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    width: 72.2%;
+    min-height:650px ;
+}
+#shop h1{
+    color: black;
+    font-family: Bahnschrift SemiBold;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px;
+}
+.shop1, .shop2, .shop3, .shop4{
+    float: left;
+    width: 270px;
+    height: 450px;
+    border-left:20px ;
+    margin:15px 10px;
+    margin-left: 20px;
+    border: 1px solid lightgrey;
+    background-color: white; 
+    padding: 0px;
+}
+.shop1:hover, .shop2:hover, .shop3:hover, .shop4:hover{
+    background-color: #F3f2ed;
+
+}
+.shop1 a, .shop2 a, .shop3 a, .shop4 a{
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+    
+}
+.shop1 a p, .shop2 a p, .shop3 a p, .shop4 a p{
+     font-family: Andale Mono, monospace;
+     font-size: 12px;
+     color: black;
+}
+ #shop h3{
+   text-align: right;
+   padding: 20px; 
+}
+#shop h3 a{
+    display:inline-flex;
+    text-decoration: none;
+    color: black;
+    font: bold 14px Bahnschrift SemiBold;
+    padding: 5px 5px;
+}
+#shop h3 a:hover{
+    background-color:#A8A8A8;
+    color:floralwhite ;
+    border-radius: 5px;
+    border: none;
+}
+#guide{
+    background-color:   #C0C0C0;
+    margin-left: 10px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    width: 1250px;
+    height:400px ;
+    color: black;
+    font: bold 25px Bahnschrift SemiBold;    
+    text-align: center;
+    padding: 40px;
+}
+#guide ul{
+    list-style: none;
+    display:inline-flex;
+}
+#guide ul li{
+    color: black;
+    font: bold 15px Bahnschrift SemiBold;
+    text-align: center;
+    padding: 20px;
+    width: 50%;
+    margin: 15px;
+    background-color: white;
+}
+#guide ul li:hover{
+    background-color: #F3f2ed;
+}
+#guide ul li h2{
+    color: #8B008B;
+    font: bold 20px Helvetica Narrow, sans-serif;
+    padding: 15px;
+}
+#guide ul li h3{
+    font: normal 15px Gill Sans, sans-serif;
+    line-height: 25px;
+    padding: 10px;
+}
+#guide ul li a{
+    text-decoration: none;
+    padding: 10px;
+    color: #0047AB;
+}
+#guide ul li a:hover{
+    color: #48D1CC;
+}
+.signup{
+    background-color:#F0F8FF;
+    border-radius: 3px;
+}
+#guide ul li h4{
+    padding: 15px;
+    color: black;
+    font: normal 15px Gill Sans, sans-serif;
+}
+#stories h1{
+    color: black;
+    font: bold 25px Bahnschrift SemiBold;    
+    text-align: center;
+    margin-top: 60px;
+}
+#stories ul{
+    list-style: none;
+    box-sizing:  border-box ;
+}
+#stories h2 {
+    padding: 15px;
+    float: left;
+}
+#stories ul li{
+    border-bottom: lightgrey;
+    border-style: solid;
+}
+#stories section{
+   padding: 40px;
+   margin-bottom: 80px;
+}
+#stories ul :last-child{
+    border-style: none;
+}
+#stories ul > :first-child+ li {
+    padding-bottom: 20px;
+}
+#stories h3 a{
+    text-decoration: none;
+    color: #F28C28 ;
+    font: bold 18px Helvetica Narrow, sans-serif;
+}   
+#stories h3 a:hover{
+    color: #C04000 ;
+}
+#stories h4 a{
+    font: bold 25px Impact, fantasy;
+    text-decoration: none;
+    color: black;
+}
+#stories h4 a:hover{
+    color: #E35335;
+}
+#stories h5 {
+    font: normal 17px Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+#stories h6 {
+    font: bold 13px Optima, sans-serif;
+    padding: 14px;
+}
+#stories h6 a{
+    text-decoration: none;
+    color: #F28C28 ;
+}
+#stories h6 a:hover{
+    color: #C04000  ;
+}
+#article{
+    text-align: center;
+    background-color:black;
+    color: whitesmoke; 
+    height: 450px;
+    font: normal 14.5px Georgia, serif;
+}
+#article h1{
+    color: whitesmoke;
+    font: bold 25px Bahnschrift SemiBold;    
+    text-align: center;
+    padding: 40px;
+    margin-top: 60px;
+}
+#article input{
+    font: normal 14.5px Georgia, serif;
+    width: 210px;
+    margin-right: 80px; 
+    border:20px ;
+}
+.date{
+    color: #787878;
+}
+#article select{
+    color:#787878;
+    margin-right: 100px;
+    font: normal 14.5px Georgia, serif;
+}
+#article div{
+    margin-left: 80px;
+    padding: 20px;
+}
+#article form{
+    border-bottom: lightgrey;
+    border-style: ridge;
+}
+.submitbutton {
+    color: black;
+    background-color: grey;
+    padding: 10px 10px;
+    margin: 25px;
+    border: none;
+}
+.submitbutton:hover{
+    background: #909090;
+    color:white;
+}
+#main-footer{
+    text-align: center;
+    margin: 40px;
+    font: normal 12px Optima, sans-serif;
+    color:  #606060;
+}
+
+@media only screen and(maxwidth:360px)
+{
+
+}
